@@ -12,7 +12,7 @@ import org.apache.cordova.CordovaWebView;
 import org.apache.cordova.PluginResult;
 
 //JSON Includes
-import org.json.JSONArray;
+import org.json.JSONArray;c
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -373,7 +373,7 @@ public class WizPurchasePlugin extends CordovaPlugin {
 		// Iterate the given Array of skus
 		for (int i = 0; i < data.length(); i++) {
 			// Instance the current sku to be consumed
-			String sku = data.getString(i);
+			String sku = data.getJSONArray(i).getString(0);
 			// Skip invalid skus
 			if (sku == null) continue;
 			if (sku == "") continue;
