@@ -12,7 +12,7 @@ import org.apache.cordova.CordovaWebView;
 import org.apache.cordova.PluginResult;
 
 //JSON Includes
-import org.json.JSONArray;c
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
