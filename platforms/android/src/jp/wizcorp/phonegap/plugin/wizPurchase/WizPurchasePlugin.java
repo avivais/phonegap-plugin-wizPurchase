@@ -397,6 +397,7 @@ public class WizPurchasePlugin extends CordovaPlugin {
 		if (mConsumeCbContext != null) {
 			// If we have errors send the error to the listener
 			if (!errorMsg.isEmpty()) mConsumeCbContext.error(errorMsg);
+			else mConsumeCbContext.success();
 			// Clean the listener instance
 			mConsumeCbContext = null;
 		}
